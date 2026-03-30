@@ -1,0 +1,224 @@
+1. What is image processing?
+   Answer: Image processing is the technique of performing operations on an image to improve it or extract useful information from it.
+
+2. Why is image processing important?
+   Answer: It is important because it helps improve image quality, remove noise, detect objects, and prepare images for machine learning models.
+
+3. What is the difference between image enhancement and image restoration?
+   Answer: Image enhancement improves the appearance of an image, while image restoration tries to recover the original image from a degraded version.
+
+4. What is the difference between grayscale and color images?
+   Answer: Grayscale images have only one intensity channel, while color images have multiple channels like Red, Green, and Blue.
+
+5. What is a pixel?
+   Answer: A pixel is the smallest unit of an image that stores intensity or color information.
+
+6. What is the meaning of image resolution?
+   Answer: Resolution refers to the number of pixels in an image, usually represented as width × height.
+
+7. Why do high-resolution images contain more details?
+   Answer: Because they contain more pixels, which can represent finer variations in the image.
+
+8. What is image normalization?
+   Answer: Image normalization means scaling pixel values to a fixed range, usually [0,1].
+
+9. Why is normalization important in deep learning?
+   Answer: Normalization improves numerical stability, speeds up training, and prevents large gradient values.
+
+10. What is intensity transformation?
+    Answer: Intensity transformation changes the pixel values of an image to improve brightness, contrast, or visibility.
+
+11. What is the difference between negative transformation and log transformation?
+    Answer: Negative transformation inverts pixel values, while log transformation highlights dark regions.
+
+12. Why is gamma transformation used?
+    Answer: Gamma transformation is used to adjust image brightness in a nonlinear way.
+
+13. What is histogram equalization?
+    Answer: Histogram equalization improves image contrast by redistributing intensity values.
+
+14. Why is histogram equalization useful?
+    Answer: It is useful because it spreads out the intensity values and improves visibility in low-contrast images.
+
+15. What is CLAHE?
+    Answer: CLAHE is a local contrast enhancement method that limits over-amplification of noise.
+
+16. Why is CLAHE preferred over normal histogram equalization in some cases?
+    Answer: Because CLAHE enhances contrast locally and avoids excessive brightness changes.
+
+17. What is noise in an image?
+    Answer: Noise is unwanted random variation in pixel values that reduces image quality.
+
+18. What are the common types of image noise?
+    Answer: Salt-and-pepper noise, Gaussian noise, and speckle noise.
+
+19. What is salt-and-pepper noise?
+    Answer: Salt-and-pepper noise appears as random black and white pixels in an image.
+
+20. What is Gaussian noise?
+    Answer: Gaussian noise is random noise with a normal distribution of intensity values.
+
+21. What is speckle noise?
+    Answer: Speckle noise is multiplicative noise often found in radar and medical images.
+
+22. Why is noise removal important?
+    Answer: Because noise affects image quality and reduces the accuracy of image analysis models.
+
+23. What is a filter in image processing?
+    Answer: A filter is an operation that modifies pixel values using neighboring pixels.
+
+24. What is the difference between smoothing and sharpening filters?
+    Answer: Smoothing filters remove noise and blur the image, while sharpening filters highlight edges and fine details.
+
+25. What is a mean filter?
+    Answer: A mean filter replaces each pixel with the average of its neighboring pixels.
+
+26. Why does a mean filter blur the image?
+    Answer: Because averaging neighboring values reduces sharp changes in intensity.
+
+27. What is a median filter?
+    Answer: A median filter replaces each pixel with the median value of neighboring pixels.
+
+28. Why is a median filter better for salt-and-pepper noise?
+    Answer: Because it removes isolated noisy pixels without blurring edges too much.
+
+29. What is a Gaussian filter?
+    Answer: A Gaussian filter smooths an image using a weighted average based on a Gaussian distribution.
+
+30. Why is Gaussian filtering preferred over mean filtering?
+    Answer: Because it preserves edges better and produces smoother results.
+
+31. What is edge detection?
+    Answer: Edge detection is the process of identifying boundaries in an image.
+
+32. Why are edges important in image processing?
+    Answer: Because edges help identify object boundaries and shapes.
+
+33. What is the difference between Sobel and Canny edge detection?
+    Answer: Sobel computes gradients directly, while Canny uses multiple stages for more accurate edge detection.
+
+34. What is convolution in image processing?
+    Answer: Convolution is the process of applying a filter kernel to an image.
+
+35. What is a kernel in image processing?
+    Answer: A kernel is a small matrix used to perform filtering operations.
+
+36. Why is convolution important in CNNs?
+    Answer: Because convolution helps extract local features like edges, corners, and textures.
+
+37. What is a CNN?
+    Answer: CNN stands for Convolutional Neural Network, a deep learning model used mainly for image-related tasks.
+
+38. Why are CNNs better than normal neural networks for images?
+    Answer: Because CNNs can automatically learn spatial features and require fewer parameters.
+
+39. What is a convolutional layer?
+    Answer: A convolutional layer applies filters to extract features from an image.
+
+40. What is pooling in CNN?
+    Answer: Pooling reduces the size of feature maps while preserving important information.
+
+41. What is the difference between max pooling and average pooling?
+    Answer: Max pooling selects the maximum value, while average pooling takes the average value.
+
+42. Why is pooling important?
+    Answer: Because it reduces computation and makes the network more robust to small variations.
+
+43. What is a feature map?
+    Answer: A feature map is the output of a convolutional layer showing detected patterns.
+
+44. What is the role of activation functions in CNNs?
+    Answer: Activation functions introduce nonlinearity so the network can learn complex patterns.
+
+45. Why is ReLU commonly used in CNNs?
+    Answer: Because it is simple, fast, and reduces the vanishing gradient problem.
+
+46. What is the vanishing gradient problem?
+    Answer: It is a problem where gradients become very small during training, slowing down learning.
+
+47. What is overfitting in CNNs?
+    Answer: Overfitting happens when the model performs well on training data but poorly on new data.
+
+48. How can overfitting be reduced in CNNs?
+    Answer: By using dropout, data augmentation, regularization, and more training data.
+
+49. What is dropout?
+    Answer: Dropout randomly deactivates some neurons during training to prevent overfitting.
+
+50. What is batch normalization?
+    Answer: Batch normalization normalizes intermediate outputs to improve training speed and stability.
+
+51. What is transfer learning?
+    Answer: Transfer learning means using a pre-trained model on a new task.
+
+52. Why is transfer learning useful?
+    Answer: Because it saves training time and works well even with small datasets.
+
+53. What is the idea behind autoencoders?
+    Answer: Autoencoders learn to compress and reconstruct data.
+
+54. What is the encoder part of an autoencoder?
+    Answer: The encoder compresses the input image into a smaller representation.
+
+55. What is the decoder part of an autoencoder?
+    Answer: The decoder reconstructs the original image from the compressed representation.
+
+56. Why are autoencoders useful?
+    Answer: They are useful for denoising, compression, anomaly detection, and feature extraction.
+
+57. What is a denoising autoencoder?
+    Answer: A denoising autoencoder learns to reconstruct clean images from noisy inputs.
+
+58. What is latent space in an autoencoder?
+    Answer: Latent space is the compressed representation learned by the encoder.
+
+59. What is the difference between an autoencoder and PCA?
+    Answer: PCA is a linear dimensionality reduction technique, while autoencoders can learn nonlinear representations.
+
+60. What is U-Net?
+    Answer: U-Net is a CNN architecture mainly used for image segmentation.
+
+61. Why is U-Net popular in medical imaging?
+    Answer: Because it can accurately segment organs, tissues, and tumors.
+
+62. What is the importance of skip connections in U-Net?
+    Answer: Skip connections help preserve spatial details lost during downsampling.
+
+63. What is MobileNet?
+    Answer: MobileNet is a lightweight CNN architecture designed for mobile and embedded devices.
+
+64. Why is MobileNet efficient?
+    Answer: Because it uses depthwise separable convolutions, which reduce computation and parameters.
+
+65. What is the difference between normal convolution and depthwise separable convolution?
+    Answer: Normal convolution combines spatial filtering and channel mixing together, while depthwise separable convolution performs them separately.
+
+66. Why are lightweight models important?
+    Answer: Because they can run on devices with limited memory and computation power.
+
+67. What is ResNet?
+    Answer: ResNet is a CNN architecture that uses residual connections to train very deep networks.
+
+68. Why are residual connections useful?
+    Answer: They help solve the vanishing gradient problem.
+
+69. What is the idea behind VGGNet?
+    Answer: VGGNet uses many small 3×3 convolution filters stacked together.
+
+70. Why is VGGNet considered simple?
+    Answer: Because it has a very regular and uniform architecture.
+
+71. What is the purpose of image segmentation?
+    Answer: Image segmentation divides an image into meaningful regions or objects.
+
+72. What is the difference between image classification and image segmentation?
+    Answer: Classification gives one label to the whole image, while segmentation gives labels to individual pixels.
+
+73. What is object detection?
+    Answer: Object detection identifies both the class and location of objects in an image.
+
+74. What is the difference between object detection and image classification?
+    Answer: Classification predicts what is present, while detection also predicts where it is present.
+
+75. Why is preprocessing important before CNN training?
+    Answer: Because it improves image quality and helps the model learn better.
